@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"> 
+    <meta name="viewport" content="width= device-width, inicial-scale= 1.0">
+    <title>Vacunación 2022</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logotext"> 
+            <a class="titlvac" href="index.html">
+                <div class="linklogo">
+                    <p>Vacunación</p>
+                </div>
+            </a>
+        </div>
+        <div class="botonera">
+            <a href="./index.html" class="botonestop">
+                <div>
+                    <p>Base de datos</p>
+                </div>
+            </a> 
+            <a href="/" class="botonestop">
+                <div>
+                    <p>Educación</p>
+                </div>
+            </a>
+            <a href="/" class="botonestop">
+                <div>
+                    <p>Noticias</p>
+                </div>
+            </a>
+            <a href="/" class="botonestop">
+                <div>
+                    <p>Regulación</p>
+                </div>
+            </a>
+            <a href="/" class="botonesazul">
+                <div>
+                    <p style="color: white;">Vacúnate</p>
+                </div>
+            </a>
+        </div>
+    </header>
+    <section>
+        <div class="cover">
+            <div class="leftcover">
+                <div class="titulocover">
+                        <p style="color: rgb(31, 31, 100);margin: 0%;">Enfrenta los Virus con Vacunas</p>
+                </div>
+                <div class="textcover-cont texto">
+                    <div class="textcover">
+                        <p style="margin: 0% ;">Paremos la pandemia combatiendo el virus con vacunas, no permitas que tú y tu familia se contagien.</p>
+                    </div>
+                </div>
+                <div class="subscovercont">
+                    <div class="subscover">
+                        <div class="subs">
+                            <i class="fa-solid fa-virus-covid-slash"></i>
+                            <p class="minitext" style="color: rgb(31, 31, 100);">Mejor protección</p>
+                        </div>
+                        <div class="subs">
+                            <i class="fa-solid fa-syringe"></i>
+                            <p class="minitext" style="color: rgb(31, 31, 100);">Vacunas selectas</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="preformcont">
+                    <div class="preform">
+                        <div>
+                            <i class="fa-solid fa-book-user"></i>  
+                        </div>
+                        <div>
+                            <p class="texto" style="font-size:16px ; color: rgb(15, 35, 114);">Agenda tu vacunación</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="formvacon">
+                    <div class="infocont">
+                        <div class="info">
+                            <div class="upinfo">
+                                <div>
+                                    <i class="fa-regular fa-hospital"></i>
+                                </div>
+                                <div>
+                                    <p class="texto">Ubicación</p>
+                                </div>
+                            </div>
+                            <div class="downinfo">
+                                <select name="ubicación" id="ubicacion" class="texto inform">
+                                    <option>-Estado</option>
+                                    <option>Aguascalientes</option>
+                                    <option>Baja California</option>
+                                    <option>Baja California Sur</option>
+                                    <option>Campeche</option>
+                                    <option>Chiapas</option>
+                                    <option>Chihuahua</option>
+                                    <option>Ciudad de México</option>
+                                    <option>Coahuila</option>
+                                    <option>Colima</option>
+                                    <option>Durango</option>
+                                    <option>Guanajuato</option>
+                                    <option>Guerrero</option>
+                                    <option>Hidalgo</option>
+                                    <option>Jalisco</option>
+                                    <option>México</option>
+                                    <option>Michoacán</option>
+                                    <option>Morelos</option>
+                                    <option>Nayarit</option>
+                                    <option>Nuevo León</option>
+                                    <option>Oaxaca</option>
+                                    <option>Puebla</option>
+                                    <option>Querétaro</option>
+                                    <option>Quintana Roo</option>
+                                    <option>San Luis Potosí</option>
+                                    <option>Sinaloa</option>
+                                    <option>Sonora</option>
+                                    <option>Tabasco</option>
+                                    <option>Tamaulipas</option>
+                                    <option>Tlaxcala</option>
+                                    <option>Veracruz</option>
+                                    <option>Yucatán</option>
+                                    <option>Zacatecas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="upinfo">
+                                <div>
+                                    <i class="fa-regular fa-calendar"></i>
+                                </div>
+                                <div>
+                                    <p class="texto">Fecha</p>
+                                </div>
+                            </div>
+                            <div class="downinfo">
+                                <input type="date" name="fecha" id="fecha" class="texto inform">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="upinfo">
+                                <div>
+                                    <i class="fa-light fa-syringe"></i>
+                                </div>
+                                <div>
+                                    <p class="texto">Marca de vacuna</p>
+                                </div>
+                            </div>
+                            <div class="downinfo">
+                                <select name="marcas" id="marcas" class="texto inform">
+                                    <option>Moderna</option>
+                                    <option>Pfizer</option>
+                                    <option>Johnson & Johnson</option>
+                                    <option>Sputnik</option>
+                                    <option>Cansino</option>
+                                    <option>AstraZeneca</option>
+                                    <option>Sinovac</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infobot">
+                        <a href="/" class="botonesazul" >
+                            <p style="color: white;">Registrar</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="rightcover"></div>
+        </div>
+        <div class="brands">
+            <div>
+                <img src="./img/astra.jpg" alt="logo AstraZeneca" height="50px" style="opacity: 0.3;">
+            </div>
+            <div>
+                <img src="./img/sinovac.png" alt="logo Sinovac" height="20px" style="opacity: 0.3;">
+            </div>
+            <div>
+                <img src="./img/pfizer.jpg" alt="logo Pfizer" height="50px" style="opacity: 0.3;">
+            </div>
+            <div>
+                <img src="./img/moderna.jpg" alt="logo Moderna" height="35px" style="opacity: 0.3;">
+            </div>
+        </div>
+        <div class="whycont">   
+            <div class="whyuse">
+                <div class="grandtitl">
+                    <p>¿Por qué vacunarse?</p>
+                </div>
+                <div class="texto">
+                    <p>Para resolver cualquier duda sobre porqué ponerse una vacuna contra COVID-19, hemos identificado 4 beneficios de la vacunación contra COVID-19.</p>
+                </div>
+            </div>
+        </div>
+        <div class="recocon">
+            <div class="reco">
+                    <i class="fa-solid fa-heart-circle-plus"></i>
+                <div class="recomid titlzul">
+                    <p>Minimiza el contagio del virus</p>
+                </div>
+                <div class="recodown">
+                    <p class="minitext">Se ha comprobado que las vacunas ayudan a prevenir el contagio del Coronavirus</p>
+                </div>
+            </div>
+            <div class="reco">
+                <div class="recoup">
+                    
+                </div>
+                <div class="recomid titlzul">
+                    <p>Forma anticuerpos</p>
+                </div>
+                <div class="recodown">
+                    <p class="minitext">Las vacunas contra el COVID-19 han probado formar anticuerpos, respuesta del sistema inmune</p>
+                </div>
+            </div>
+            <div class="reco">
+                <div class="recoup">
+                    
+                </div>
+                <div class="recomid titlzul">
+                    <p>Protege a la gente cercana</p>
+                </div>
+                <div class="recodown">
+                    <p class="minitext">La vacunación de una persona ayuda a proteger la salud de la gente cercana</p>
+                </div>
+            </div>
+            <div class="reco">
+                <div class="recoup">
+                    
+                </div>
+                <div class="recomid titlzul">
+                    <p>Crea un grupo inmune</p>
+                </div>
+                <div class="recodown">
+                    <p class="minitext">La vacuna contra COVID-19 ayuda a crear una sociedad inmune o inmunidad de rebaño</p>
+                </div>
+            </div>
+        </div>
+        <div class="preparation">
+            <div class="imgsection" style="background-image:url(./img/vacu.jpeg);"></div>
+            <div class="textsection">
+                <div class="title">
+                    <p class="grandtitl">Preparación antes de vacunarte</p>
+                </div>
+                <div class="subtitle">
+                    <p class="texto">El éxito de las vacunas está fuertemente influenciado por el sistema inmune del cuepo. 
+                        Por lo tanto, hay varias previsiones para hacer funcionar las vacunas contra COVID-19:
+                    </p>
+                </div>
+                <div class="prepscont">
+                    <div class="preps">
+                        <div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div>
+                            <p class="titlzul">Evita bebidas alcohólicas</p>
+                        </div>
+                    </div>
+                    <div class="preps">
+                        <div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div>
+                            <p class="titlzul">Evita el estrés</p>
+                        </div>
+                    </div>
+                    <div class="preps">
+                        <div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div>
+                            <p class="titlzul">Ingiere comida saludable</p>
+                        </div>
+                    </div>
+                    <div class="preps">
+                        <div>
+                            <i class="fa-solid fa-bed"></i>
+                        </div>
+                        <div>
+                            <p class="titlzul">Duerme lo suficiente</p>
+                        </div>
+                    </div>
+                    <div class="preps">
+                        <div>
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+                        <div>
+                            <p class="titlzul">Realiza actividades físicas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="emerg">
+            <div class="textsection centro">
+                <div class="title">
+                    <p class="grandtitl">Contacto de emergencia</p>
+                </div>
+                <div class="subtitle">
+                    <p class="texto">Contacta algunas de las opciones mostradas debajo en caso que tú o algún 
+                        familiar no se sienta bien y tenga síntomas parecidos a los del COVID-19, asegúrate de 
+                        cuidarte antes de reportarnoslo:
+                    </p>
+                </div>
+                <div class="contactcon">
+                    <div class="contacto">
+                        <div class="upem">
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="emtext">
+                                <p class="titlzul">Llamada</p>
+                                <p class="minitext">021.123.145.14</p>
+                            </div>
+                        </div>
+                        <div class="downem">
+                            <a href="/">
+                                <div class="botonesem">
+                                    <p style="color: white;">Llama ahora</p>
+                                </div>
+                            </a>  
+                        </div>
+                    </div>
+                    <div class="contacto">
+                        <div class="upem">
+                            <div>
+                                <i class="fa-solid fa-comment-medical"></i>
+                            </div>
+                            <div class="emtext">
+                                <p class="titlzul">Chat</p>
+                                <p class="minitext">021.123.145.14</p>
+                            </div>
+                        </div>
+                        <div class="downem">
+                            <a href="/">
+                                <div class="botonesem">
+                                    <p style="color: white;">Escribe ahora</p>
+                                </div>
+                            </a>  
+                        </div>
+                    </div>
+                    <div class="contacto">
+                        <div class="upem">
+                            <div>
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                            <div class="emtext">
+                                <p class="titlzul">Videollamada</p>
+                                <p class="minitext">021.123.145.14</p>
+                            </div>
+                        </div>
+                        <div class="downem">
+                            <a href="/">
+                                <div class="botonesem">
+                                    <p style="color: white;">Llama ahora</p>
+                                </div>
+                            </a>  
+                        </div>
+                    </div>
+                    <div class="contacto">
+                        <div class="upem">
+                            <div>
+                                <i class="fa-solid fa-message"></i>
+                            </div>
+                            <div class="emtext">
+                                <p class="titlzul">Mensaje</p>
+                                <p class="minitext">021.123.145.14</p>
+                            </div>
+                        </div>
+                        <div class="downem">
+                            <a href="/">
+                                <div class="botonesem">
+                                    <p style="color: white;">Escribe ahora</p>
+                                </div>
+                            </a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="imgsection" style="background-image: url(./img/center.jpg);background-position: 85% 50%;"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="footercon">
+            <div class="vacfoot">
+                <p class="footlogo"> Vacunación 2022</p>
+                <p class="texto">Por un mundo mas sano</p>
+            </div>
+            <div class="footlinks">
+                <div class="linkcont">
+                    <p class="titlzul">Información</p>
+                    <a href="/" class="texto">Nosotros</a>
+                    <a href="/" class="texto">Características</a>
+                    <a href="/" class="texto">Noticias y Blog</a>
+                </div>
+                <div class="linkcont">
+                    <p class="titlzul">Compañía</p>
+                    <a href="/" class="texto">Forma de trabajo</a>
+                    <a href="/" class="texto">Capital</a>
+                    <a href="/" class="texto">Seguridad</a>
+                </div>
+                <div class="linkcont">
+                    <p class="titlzul">Soporte</p>
+                    <a href="/" class="texto">Preguntas frecuentes</a>
+                    <a href="/" class="texto">Centro de soporte</a>
+                    <a href="/" class="texto">Contacto</a>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="derechos">
+                <p class="texto">@2022 Vacunación 2022. Todos los derechos reservados</p> 
+            </div>
+            <div class="minilink"> 
+                <a href="/" class="minitext">Términos y condiciones</a>
+                <a href="/" class="minitext">Políticas de privacidad</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
